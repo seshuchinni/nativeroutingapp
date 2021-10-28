@@ -1,21 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-  
-import { StyleSheet, Text, View,ScrollView} from 'react-native';
-import HttpExample from './list.js'
-export default function App() {
+import React, { Component } from 'react';
+import { AppRegistry, View } from 'react-native';
+import Routes from './Routes.js'
 
-  return (
-    <HttpExample />
-  )
+class App extends Component {
+   render() {
+      return (
+         <Routes />
+      )
+   }
 }
-
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App
